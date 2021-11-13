@@ -5,6 +5,11 @@ export default function App() {
 
 
   return (
-    <h1>SUP HUMANS</h1>
+    <>
+    <main className="h-screen bg-star-sky bg-cover">
+      <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
+    </main>
+    </>
   )
 }
+

@@ -27,6 +27,9 @@ module.exports = {
       purple: colors.purple,
     },
     extend: {
+      backgroundImage: {
+        'star-sky': "url('https://i.pinimg.com/originals/7a/e0/1b/7ae01bef2ff539cb85d1bd2f1d53fe30.gif')"
+      },
       colors: {
         slate: colors.slate,
         zinc: colors.zinc,
