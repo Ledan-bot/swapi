@@ -10,8 +10,11 @@ const titles = {
   'WRONG': null
 }
 
-function correctTitle({ params }, res, next) {
-  const { movie } = params;
+function correctTitle({ query }, res, next) {
+  console.log(query);
+  const { movie } = query;
+
+  console.log('MOVIE: ', movie)
   for (let title in titles) {
     if (title === movie.toLowerCase()) {
       next();
@@ -23,10 +26,12 @@ function correctTitle({ params }, res, next) {
   }
 }
 
-async function searchSWAPI ({ params }, res, next) {
-  const { movie } = params;
+async function searchSWAPI ({ query }, res, next) {
+  const { movie } = query;
   const lowerCaseMovie = movie.toLowerCase();
   let trueOrder = titles[lowerCaseMovie].toString()
+
+  console.log('MOVIE', movie)
 
   try {
     const response = await Axios.get(`https://swapi.dev/api/films/${trueOrder}/`)
