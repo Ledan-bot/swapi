@@ -10,7 +10,7 @@ export default function App() {
   if (!movieData) {
     return (
       <main className="h-screen bg-star-sky bg-cover">
-        <section className="h-3/6 flex flex-col content-center justify-center ">
+        <section className="h-3/6 flex flex-col content-between justify-between ">
           <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
           <MovieSearch updateMovieData={updateMovieData} />
         </section>

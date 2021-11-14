@@ -47,13 +47,18 @@ module.exports = {
       },
       keyframes: {
         scroll: {
-          from: { top: '0' },
-          to: { top: '-7500px' }
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-3000px)' },
+        },
+        angle: {
+          from: { transform: 'translateZ(0)' },
+          to: { transform: 'translateZ(-2500px)'},
         }
       },
-      animations: {
-        scoll: 'scroll 60s linear forwards'
-      }
+      animation: {
+        scroll: 'scroll 60s linear forwards',
+        angle: 'angle'
+      },
     },
     spacing: {
       px: '1px',

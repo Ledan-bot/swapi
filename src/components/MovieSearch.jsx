@@ -22,9 +22,9 @@ export default function MovieSearch({updateMovieData = f => f}) {
   }
 
   return (
-    <form className="" onSubmit={searchMovie}>
-      <input type="text" placeholder="Enter Movie Name" onChange={e => updateSearch(e.target.value)} />
-      <input type="submit" name="search" value="Search" />
+    <form className="flex flex-col items-center " onSubmit={searchMovie}>
+      <input type="text" placeholder="Enter Movie Name" onChange={e => updateSearch(e.target.value)} className="w-3/12 bg-transparent rounded-lg text-yellow-400"/>
+      <input type="submit" name="search" value="Search" className="w-3/12 bg-yellow-400 rounded-lg"/>
     </form>
   )
 }
