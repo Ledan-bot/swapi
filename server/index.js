@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const axios = require('axios').default;
 const bodyParser = require('body-parser');
-const { correctTitle, searchSWAPI } = require('./routes/search.js');
+const { correctTitle, searchSWAPI, wookieSearchSWAPI } = require('./routes/search.js');
 
 
 const PORT = process.env.PORT || 8006;
@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 app.get('/api/search/:movie', correctTitle, searchSWAPI)
+app.get('/api/wookie-search/:movie', correctTitle, wookieSearchSWAPI)
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`)
