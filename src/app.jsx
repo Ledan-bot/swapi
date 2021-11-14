@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
-import MovieSearch from './components/forms/MovieSearch.jsx';
+import MovieSearch from './components/MovieSearch.jsx';
 
 export default function App() {
   let [movieData, updateMovieData] = useState('');
