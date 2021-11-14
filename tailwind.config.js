@@ -44,6 +44,15 @@ module.exports = {
         fuchsia: colors.fuchsia,
         pink: colors.pink,
         rose: colors.rose,
+      },
+      keyframes: {
+        scroll: {
+          from: { top: '0' },
+          to: { top: '-7500px' }
+        }
+      },
+      animations: {
+        scoll: 'scroll 60s linear forwards'
       }
     },
     spacing: {

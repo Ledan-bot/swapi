@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 import MovieSearch from './components/MovieSearch.jsx';
+import MovieData from './components/MovieData.jsx';
 
 export default function App() {
   let [movieData, updateMovieData] = useState('');
@@ -9,16 +10,22 @@ export default function App() {
   if (!movieData) {
     return (
       <main className="h-screen bg-star-sky bg-cover">
-        <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
-        <MovieSearch updateMovieData={updateMovieData} />
+        <section className="h-3/6 flex flex-col content-center justify-center ">
+          <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
+          <MovieSearch updateMovieData={updateMovieData} />
+        </section>
       </main>
     )
   } else {
-    <main className="h-screen bg-star-sky bg-cover">
-      <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
-      <MovieSearch updateMovieData={updateMovieData} />
-      <MovieData movieData={movieData} />
-    </main>
+    return (
+      <main className="h-screen bg-star-sky bg-cover">
+        <section className="h-3/6 flex flex-col content-center justify-evenly">
+          <h1 className="text-yellow-400 text-center text-8xl" >Star Wars</h1>
+          <MovieSearch updateMovieData={updateMovieData} />
+          <MovieData movieData={movieData} />
+        </section>
+      </main>
+    )
   }
 }
 
