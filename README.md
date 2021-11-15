@@ -22,4 +22,4 @@ Naviate to the repository & run the rollowing commands in order to set up the lo
   npm run watch:css
   npm run react-dev
 ```
-Now that the environment has been created - naivate to localhost:8006 to view the application in your browser.
+Now that the environment has been created - navigate to localhost:8006 to view the application in your browser.
