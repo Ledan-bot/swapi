@@ -47,7 +47,7 @@ module.exports = {
       },
       keyframes: {
         scroll: {
-          from: { transform: 'translateY(0)' },
+          from: { transform: 'translateY(1000px)' },
           to: { transform: 'translateY(-3000px)' },
         },
         angle: {
@@ -56,7 +56,7 @@ module.exports = {
         }
       },
       animation: {
-        scroll: 'scroll 60s linear forwards',
+        scroll: 'scroll 300s linear forwards',
         angle: 'angle'
       },
     },
