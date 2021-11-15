@@ -1,7 +1,7 @@
 
 # Bongo Media SWAPI
 
-A React application that interacts with the the Star wars API. The llocal machine must have NodeJS installed.
+A React application that interacts with the the Star wars API. The local machine must have NodeJS installed.
 
 ## Authors
 
